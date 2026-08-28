@@ -1,0 +1,30 @@
+while True:
+    try:
+        num=input('enter number or \'q\' to quit ')
+        if num.lower()=='q':
+            print('exit')
+            break
+    
+        num1=float(num)
+        op=input('enter operator:')
+        num2=float(input('enter number:'))
+        if op=='+':
+            print(num1+num2)
+        elif op=='-':
+            print(num1-num2)             #elif to make it more efficient and time saving
+        elif op=='*':
+            print(num1*num2)
+        elif op=='/':
+            print(num1/num2)
+        elif op=='//':
+            print(num1//num2)
+        elif op=='%':
+            print(num1%num2)
+        else:
+            print('invalid operator!')
+   
+    except ZeroDivisionError:
+        print('not defined')
+    except ValueError:
+        print('invalid input!')
+    print(
