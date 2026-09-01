@@ -27,4 +27,4 @@ while True:
         print('not defined')
     except ValueError:
         print('invalid input!')
-    print(
+    print()
